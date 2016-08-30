@@ -11,29 +11,29 @@ IBM Data Server Manager image is created by using the following Dockerfiles:
 
 Dockerfile:
 
-    Uses the image created by Dockerfile as the base image
+    1. Uses the image created by Dockerfile as the base image
 
-    Copies the server startup script to the image
+    2. Copies the server startup script to the image
 
-    When the container is started the server is started
+    3. When the container is started the server is started
 
 Building the IBM Data Server Manager Base image
 
-    Place the downloaded IBM Data Server Manager binaries and unpack to ibm-datasrvrmgr
+    1. Place the downloaded IBM Data Server Manager binaries and unpack to ibm-datasrvrmgr
 
-    Edit setup.conf
+    2. Edit setup.conf
 
-    Place start_dsm.sh
+    3. Place start_dsm.sh
 
-    Download the ubuntu 14.04 image
+    4. Download the ubuntu 14.04 image
 
-    docker pull ubuntu:14.04
+    `docker pull ubuntu:14.04`
 
-    Move to the directory base/
+    5. Move to the directory base/
 
-    Build the prereq image by using:
+    6. Build the prereq image by using:
 
-docker build  -t <prereq-image-name> -f Dockerfile.install .
+    `docker build  -t <prereq-image-name> -f Dockerfile.install .`
                             
 Running the images
 
