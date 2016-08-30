@@ -27,13 +27,17 @@ Building the IBM Data Server Manager Base image
 
     4. Download the ubuntu 14.04 image
 
-    `docker pull ubuntu:14.04`
+    ```Bash
+    docker pull ubuntu:14.04
+    ```
 
     5. Move to the directory base/
 
     6. Build the prereq image by using:
 
-    `docker build  -t <prereq-image-name> -f Dockerfile.install .`
+    ```Bash
+    docker build  -t <prereq-image-name> -f Dockerfile.install .
+    ```
                             
 Running the images
 
