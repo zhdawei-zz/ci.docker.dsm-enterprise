@@ -21,7 +21,7 @@ Building the IBM Data Server Manager Base image
 
     1. Place the downloaded IBM Data Server Manager binaries and unpack to ibm-datasrvrmgr
 
-    2. Edit setup.conf
+    2. Edit setup.conf, change to "product.license.accepted=y" , set administrator user and password.
 
     3. Place start_dsm.sh
 
